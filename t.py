@@ -7,7 +7,7 @@ import json
 req = requests.get('https://open-meteo.com/en/docs')
 data = req.text
 data=json.dumps(data)
-#data=json.loads(data)
+data=json.loads(data)
 
 tk = Tk()
  
