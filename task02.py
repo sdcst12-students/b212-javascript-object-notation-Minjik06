@@ -29,17 +29,7 @@ class menu():
             print()
     
     def __init__(self):
-        self.menu2()
-            
-
-"""
-print(c)
-        for i in range(len(a['menu'])):
-            print(a['menu'][i])
-        print(*a['menu'][0].keys())"""
-        
-        
-    
+        self.menu2()  
     
 m=menu()
 

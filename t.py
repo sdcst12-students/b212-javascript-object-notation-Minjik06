@@ -1,16 +1,20 @@
+from tkinter import *
+from tkhtmlview import HTMLLabel
+import requests
 import json
-filename1='task01a.txt'
+ 
 
-file=open(filename1, "r")
+req = requests.get('https://open-meteo.com/en/docs')
+data = req.text
+data=json.dumps(data)
+#data=json.loads(data)
 
-fileData1=file.read()
-
-file1=json.loads(fileData1)
-print(file1)
-
-
-max1=0
-for i in range(len(file1)):
-    if max1<file1[i]:
-        max1=file1[i]
-print(f"max: {max1}")
+tk = Tk()
+ 
+tk.geometry("400x400")
+ 
+html = HTMLLabel(tk, html=data)
+ 
+html.pack(pady=20, padx=20)
+ 
+tk.mainloop()
