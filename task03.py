@@ -11,10 +11,10 @@ data=json.loads(data)
 
 tk = Tk()
  
-tk.geometry("400x400")
+tk.geometry("500x500")
  
 html = HTMLLabel(tk, html=data)
  
-html.pack(pady=20, padx=20)
+html.pack(pady=50, padx=50)
  
 tk.mainloop()
