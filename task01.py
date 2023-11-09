@@ -43,7 +43,7 @@ class max():
         for i in range(len(a)):
             if max1<a[i]:
                 max1=a[i]
-        print(f"max (file-task01a.txt): {max1}")
+        print(f"max (file: task01a.txt)-> {max1}")
         return max1
 
     def cal2(self):
@@ -52,7 +52,7 @@ class max():
         for i in range(len(a)):
             if max1<a[i]:
                 max1=a[i]
-        print(f"max (file-task01b.txt): {max1}")
+        print(f"max (file: task01b.txt)-> {max1}")
         return max1
 
     def cal3(self):
@@ -61,7 +61,7 @@ class max():
         for i in range(len(a)):
             if max1<a[i]:
                 max1=a[i]
-        print(f"max (file-task01c.txt): {max1}")
+        print(f"max (file: task01c.txt)-> {max1}")
         return max1
 
     def __init__(self):

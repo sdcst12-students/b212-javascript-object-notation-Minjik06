@@ -20,7 +20,7 @@ class menu():
     def menu2(self):
         a=self.menu1()
         print(*a.keys())
-        print("---------------")
+        print("_____________________________")
         c=list(a['menu'][0].keys())
         for i in range(len(a['menu'])):
             for j in range(len(c)):
